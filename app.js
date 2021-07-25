@@ -203,6 +203,10 @@ var favCar = prompt("what is you fav car? , please choose one of these ; Tesla, 
 // Tesla != Mazda => true 
 while(favCar != "Tesla" && favCar != "Mazda" && favCar != "mercedes"){
 
+// if(favCar == null ){
+//   break;
+// }
+
 favCar = prompt("what is you fav car? , please choose one of these ; Tesla, Mazda,mercedes")
 //favCar = whatever
 //favCar = Tesla 
