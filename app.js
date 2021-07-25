@@ -144,28 +144,97 @@ else{
 // }
 
 
+/**
+
+loops
+
+we use to repeat smth , to do smh over and over again
+
+for(initiate a variable; condition;counter){
+
+  code i want to repeate 
+}
+var i = 0
+console.log(i)
+console.log(i++)
+
+
+while loop
+
+while(condition){
+code goes here
+  counter
+}
+
+
+ */
+
+
+// for(var i = 0; i<=100;i++){
+//   //code goes here 
+// if(i%2 != 0)
+//  { console.log(i)}
+// }
+
+
+// var i = 1
+
+// while(i <= 100){
+//   console.log(i)
+//   i += 4
+// }
+
+
+
+
 var name = prompt("what is your name")
 
 alert("hey, wlecome to my website " + name )
 
-var favCar = prompt("what is you fav car?")
+var favCar = prompt("what is you fav car? , please choose one of these ; Tesla, Mazda,mercedes")
+
+
+//favCar = tesla 
+
+// tesla != Tesla => true  // tesla == Tesla =>flase
+// tesla ! = Mazda => true 
+// whatever != Tesla => true
+// Tesla != Tesla => false
+// Tesla != Mazda => true 
+while(favCar != "Tesla" && favCar != "Mazda" && favCar != "mercedes"){
+
+favCar = prompt("what is you fav car? , please choose one of these ; Tesla, Mazda,mercedes")
+//favCar = whatever
+//favCar = Tesla 
+}
+
+var numberOfPic = prompt("how many times you wish to see it ")
+
+while(numberOfPic >10 ){
+  numberOfPic = prompt("please enter number less than 10!")
+}
 
 
 if(favCar == "Tesla"){
-document.write(
+
+ 
+for(var i = 0; i< numberOfPic;i++)
+
+{document.write(
   "<div>" + "<h3>" + favCar+"</h3>"
-+ "<img  src='https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop' width='100' height='100'     />" + "</div>")
++ "<img  src='https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop' width='100' height='100'     />" + "</div>")}
 }
 else if (favCar =="Mazda"){
-document.write(
+
+for(var i = 0 ; i <numberOfPic;i++)
+
+{document.write(
   "<div>" + "<h3>" + favCar+"</h3>"
-+ "<img  src='https://cars.usnews.com/pics/size/350x262/images/Auto/custom/14497/2021_Mazda_CX-3_1.jpg' width='100' height='100'     />" + "</div>")
++ "<img  src='https://cars.usnews.com/pics/size/350x262/images/Auto/custom/14497/2021_Mazda_CX-3_1.jpg' width='100' height='100'     />" + "</div>")}
 }
 else if(favCar =="mercedes"){
-document.write(
+  for(var i = 0 ; i <numberOfPic;i++)
+{document.write(
   "<div>" + "<h3>" + favCar+"</h3>"
-+ "<img  src='https://www.mercedes-benz-mena.com/ar/passengercars/mercedes-benz-cars/models/gle/coupe-c167/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_58586423/image.MQ6.8.20191119092227.jpeg' width='100' height='100'     />" + "</div>")
-}
-else{
-  alert('we dont have this car')
++ "<img  src='https://www.mercedes-benz-mena.com/ar/passengercars/mercedes-benz-cars/models/gle/coupe-c167/explore/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_58586423/image.MQ6.8.20191119092227.jpeg' width='100' height='100'     />" + "</div>")}
 }
