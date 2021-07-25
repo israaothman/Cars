@@ -190,7 +190,7 @@ code goes here
 var name = prompt("what is your name")
 
 alert("hey, wlecome to my website " + name )
-
+ 
 var favCar = prompt("what is you fav car? , please choose one of these ; Tesla, Mazda,mercedes")
 
 
